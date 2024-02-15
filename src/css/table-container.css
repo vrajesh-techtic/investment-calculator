@@ -1,0 +1,29 @@
+.tableContainer {
+  width: fit-content;
+  margin: 20px auto;
+  margin-bottom: 100px;
+  font-size: 1.2rem;
+}
+
+td {
+  width: fit-content;
+  border: solid 2px black;
+  text-align: center;
+}
+thead {
+  background-color: rgb(182, 182, 252);
+  color: white;
+}
+
+th {
+  width: fit-content;
+  border: solid 2px black;
+  text-align: center;
+}
+
+tr:nth-child(even) {
+  background-color: rgb(210, 252, 252);
+}
+tbody tr:nth-child(odd) {
+  background-color: rgb(253, 178, 178);
+}

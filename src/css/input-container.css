@@ -1,0 +1,39 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.input-container {
+  border: solid 2px black;
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  padding: 30px 20px;
+  border-radius: 30px;
+  background-color: rgb(192, 235, 106);
+}
+
+.input-container div {
+  display: flex;
+}
+
+.inputData {
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.inputData label {
+  font-weight: bold;
+}
+
+.inputData input {
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+button {
+  margin: 10px;
+}
