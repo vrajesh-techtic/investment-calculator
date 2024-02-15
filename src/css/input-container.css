@@ -37,3 +37,13 @@
 button {
   margin: 10px;
 }
+
+@media (max-width: 425px) {
+  .main-container {
+    margin-top: -30px;
+    scale: 0.8;
+  }
+  .input-container div {
+    flex-direction: column;
+  }
+}

@@ -27,3 +27,12 @@ tr:nth-child(even) {
 tbody tr:nth-child(odd) {
   background-color: rgb(253, 178, 178);
 }
+
+@media (max-width: 425px) {
+  .tableContainer {
+    margin: 0px 30px;
+    margin-top: -50px;
+    font-size: 0.8rem;
+    margin-bottom: 20px;
+  }
+}
