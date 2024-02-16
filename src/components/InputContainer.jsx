@@ -34,6 +34,10 @@ const InputContainer = () => {
     }
   }
 
+  function handleChange(e, inputKey) {
+    updateData(inputKey, e.target.value);
+  }
+
   return (
     <>
       <div className="main-container">
@@ -41,12 +45,13 @@ const InputContainer = () => {
           <div>
             <CustomInput
               labelName={`Initial Investment (in Rs.) :`}
-              getInput={updateData}
+              getInput={handleChange}
               inputKey={"initial"}
             />
+
             <CustomInput
               labelName={"Annual Investment (in Rs.) :"}
-              getInput={updateData}
+              getInput={handleChange}
               inputKey={"annual"}
             />
           </div>
@@ -54,12 +59,12 @@ const InputContainer = () => {
           <div>
             <CustomInput
               labelName={"Expected Return (%) :"}
-              getInput={updateData}
+              getInput={handleChange}
               inputKey={"expected"}
             />
             <CustomInput
               labelName={"Duration (in years) :"}
-              getInput={updateData}
+              getInput={handleChange}
               inputKey={"duration"}
             />
           </div>
